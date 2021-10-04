@@ -37,6 +37,7 @@ const OTPComponent = ({ mobile, handleClose }) => {
         if (otp !== "1234") {
             setError("Incorrect OTP")
         } else {
+            setError("")
             history.push("/success");
         }
     }

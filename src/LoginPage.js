@@ -281,6 +281,7 @@ const LoginPage = () => {
 
     const handleCheck = () => {
         if (phone.length === 10) {
+            setError("")
             setShowOTP(true);
         } else {
             setError("Check mobile number again");
